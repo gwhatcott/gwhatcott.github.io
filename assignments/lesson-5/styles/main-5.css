@@ -6,15 +6,18 @@ body {
 }
 
 header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
-  max-width: ______; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+  max-width: ______;
+    /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
 }
 
 header {}
 header h1 {}
 header img {
     max-width: 100%;
-    width: auto;
-    height: auto;
+    width: 100px;
+    height: 100px;
+    float: inherit;
+
 }
 header .subheading {}
 
@@ -23,23 +26,42 @@ nav button {}
 nav ul {
     display: flex;
     list-style-type: none;
+    position: relative;
+    
 }
-nav ul li {}
+nav ul li {
+    display: block;
+    padding: 10px 10px 10px 25px;   
+    font-size: 20px;
+    color: #818181;
+    width: 100%
+}
 nav ul li a {}
 nav ul li.active a {}
 nav ul li a:hover {}
 
 main {}
-main h2 {}
+h2 {
+    text-align: center;
+    font-size: 30px;
+}
 main figure { margin: 0 0 .2rem 2%; width:96%; }
-main figure img {
+nav figure img {
     max-width: 100%;
     width: auto;
     height: auto;
 }
 
-.forecast{
-    display: none;
+.forecast{     
+    display: block;
+    text-align: justify;
+    background-color: #ffffff;
+    padding: 20px;
+
+}
+
+h3{
+    font-size: 16px;
 }
 
 div picture img{
@@ -54,5 +76,39 @@ article img{
     height: auto;
 }
 
+.sunny{
+    height: 65px;
+    width: 65px;
+}
 
-footer {}
+
+footer {
+    font-size: 12px;
+    left: 0;
+    bottom: 30px;
+    width: 100%;
+    font-size: 14px;
+    line-height:20px;
+    text-align: center;
+}
+
+.weather-summary{
+    text-align: center;
+    position: static;
+}
+
+.country-image{
+    display: block;
+    float: left;
+    padding: 100px;
+}
+
+.town-article{
+    float: right;
+    padding: 10px 10px;
+}
+
+.contact{
+    text-align: center;
+}
+    
