@@ -6,9 +6,13 @@ body {
 }
 
 header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
-  max-width: ______;
+  max-width: 100%; /*(px = pixel is a unit of measure)  */;
+    
     /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
 }
+@media only screen and (min-width: 0em ) and (max-width: 37em )
+{
+    
 
 header {}
 header h1 {}
@@ -54,7 +58,7 @@ nav figure img {
 }
 
 .forecast{     
-    display: block;
+    display: none;
     text-align: justify;
     background-color: #ffffff;
     padding: 50px;
@@ -83,13 +87,12 @@ article img{
 
 
 footer {
-    font-size: 12px;
-    left: 0;
-    bottom: 30px;
+    position: fixed;
+    height: 140px;
+    bottom: 0;
+    background-color: #3167AD;
     width: 100%;
-    font-size: 14px;
-    line-height:20px;
-    text-align: center;
+ 
 }
 
 .weather-summary{
@@ -106,6 +109,7 @@ footer {
 .town-article{
     float: right;
     padding: 10px 10px;
+    padding-bottom: 200px;
 }
 
 .contact{
@@ -126,4 +130,4 @@ footer {
 }
 
 
-    
+    }
