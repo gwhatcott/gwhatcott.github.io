@@ -56,7 +56,7 @@ nav figure img {
     display: block;
     text-align: justify;
     background-color: #ffffff;
-    padding: 20px;
+    padding: 40px;
 
 }
 
@@ -99,8 +99,8 @@ footer {
 .country-image{
     display: block;
     float: left;
-    padding: 100px;
-}
+    padding: 70px;
+   }
 
 .town-article{
     float: right;
@@ -109,5 +109,22 @@ footer {
 
 .contact{
     text-align: center;
+    padding: 20px;
+}
+
+ #content-mobile {
+        display: block;
+        visibility: visible;
+        font-size: inherit;
+    }
+
+#content-desktop {
+        display: none;
+        visibility: hidden;
+        font-size: 0;
+}
+
+.nav-bar{
+    
 }
     

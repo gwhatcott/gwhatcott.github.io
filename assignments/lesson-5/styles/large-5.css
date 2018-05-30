@@ -1,4 +1,15 @@
 @media only screen and (min-width: 64em; ) {
     
-  
-  }
+     #content-desktop{
+        display: block;
+        visibility: visible;
+        font-size: inherit;
+    }
+
+    #content-mobile{
+        display: none;
+        visibility: hidden;
+        font-size: 0;
+    }
+    
+}
