@@ -27,6 +27,7 @@ nav ul {
     display: flex;
     list-style-type: none;
     position: relative;
+    color: 3167AD;
     
 }
 nav ul li {
@@ -56,7 +57,7 @@ nav figure img {
     display: block;
     text-align: justify;
     background-color: #ffffff;
-    padding: 40px;
+    padding: 50px;
 
 }
 
@@ -124,7 +125,5 @@ footer {
         font-size: 0;
 }
 
-.nav-bar{
-    
-}
+
     
