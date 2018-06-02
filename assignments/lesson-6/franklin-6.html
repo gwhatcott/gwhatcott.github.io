@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head> 
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1">
+    <title>Weather Today</title>
+    <meta name="description" content="Weather Site Plan">
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/main-6.css">
+    <link rel="stylesheet" type="text/css" href="styles/medium-6.css">
+    <link rel="stylesheet" type="text/css" href="styles/large-6.css">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+    <script src="scripts/hamburger.js"></script>
+
+    
+</head>
+<body>
+
+  <header>
+      
+  <h2>Weather Today</h2>
+    <span class="icon" onclick="openNav()">&#9776; &nbsp;</span>
+
+ </header>
+    
+    
+    
+    <nav>
+
+    <ul class="topnav" id="myTopnav">
+    	<li><a href="#" style="text-decoration:none">Home</a></li>
+    	<li><a href="#" style="text-decoration:none">Franklin</a></li>
+    	<li><a href="#" style="text-decoration:none">Greenville</a></li>
+    	<li><a href="#" style="text-decoration:none">Springfield</a></li>
+    	<li><a href="#" style="text-decoration:none">Storm Center</a></li>
+    	<li><a href="#" style="text-decoration:none">Gallery</a></li>
+    </ul>
+        
+      </nav> 
+        <div id="main">
+      <nav id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" id=”content-mobile”>&times;</a>
+                <a href="" style="text-decoration:none">Home</a> 
+                <a href="" style="text-decoration:none">Franklin</a> 
+                <a href="" style="text-decoration:none">Greenville</a> 
+                <a href="" style="text-decoration:none">Springfield</a>
+                <a href="" style="text-decoration:none">Storm Center</a> 
+                <a href="" style="text-decoration:none">Gallery</a>
+            </nav>
+        </div>
+        
+    
+    
+  <main>
+    
+        <figure>
+            <picture>
+            <img src="images/franklin-original.01.jpg" alt="Franklin">
+            </picture>
+        </figure>
+   
+    <section class="weather-summary">
+      <h3>Franklin</h3>    
+    <table border="1" align="center">
+                    <thead>
+                        <tr>
+                            <th colspan="7">Franklin Weather Sample/Placeholder Data</th>
+                        </tr>
+                    </thead>
+                      
+                        <tr>
+                            <td>Summary</td>
+                            <td>Sunny</td>
+                        </tr>
+                        <tr>
+                            <td>High</td>
+                            <td>90°F</td>
+                        </tr>
+                        <tr>
+                            <td>Low</td>
+                            <td>66°F</td>
+                        </tr>
+                        <tr>
+                            <td>Chance Precipitation</td>
+                            <td>0%</td>
+                        </tr>
+                        <tr>
+                            <td>Max Wind</td>
+                            <td>5 mph SW</td>
+                        </tr>
+                    
+                </table>
+
+                   
+    </section>
+    
+    <section class="forecast" id=”content-desktop”>
+
+    <table border="1" align="center">
+        <thead>
+            <th colspan="10" align="center">Ten Day Forecast</th>
+            
+	   </thead>
+            
+          <tr>
+            <th>Day 1</th>
+            <th>Day 2</th>
+            <th>Day 3</th>
+            <th>Day 4</th>
+            <th>Day 5</th>
+            <th>Day 6</th>
+            <th>Day 7</th>
+            <th>Day 8</th>
+            <th>Day 9</th>
+            <th>Day 10</th>
+          </tr>
+        <tbody>  
+          <tr>
+            <td>89&deg;F</td>
+            <td>87&deg;F</td>
+            <td>78&deg;F</td>
+            <td>75&deg;F</td>
+            <td>72&deg;F</td>
+            <td>72&deg;F</td>
+            <td>79&deg;F</td>
+            <td>83&deg;F</td>
+            <td>85&deg;F</td>
+            <td>89&deg;F</td>
+          </tr>
+	</tbody>
+      </table>
+    </section>
+
+      <section class="country-image">
+    <article>
+      <h3>Franklin Breaks Record</h3>	
+      <img src="images/countryside.jpg" alt="Countryside">
+      <p class="town-article">
+          Lorem ipsum dolor sit amet, an vis postea diceret delicatissimi. Eos ea eros comprehensam. <br> Vim et aliquando theophrastus consectetuer, sea in populo audire. Reque nostrud nostrum id <br> vim. Ne deleniti iudicabit ius, vis ubique assentior ut. Dico aliquid interpretaris at vis, sale <br> facilis complectitur nec te.
+
+          Legere tincidunt in cum, ad possim repudiandae eum. Eu usu <br> referrentur consequuntur, ut doctus torquatos eam. An vis convenire molestiae dissentias, <br> dolores ponderum efficiantur has eu. Vel partem inimicus te, quo at stet aperiam, te ipsum <br> idque quo.
+
+          Sed ex mundi labore. Sint erroribus mea ex. Ad aperiri adolescens nam. Cu eripuit <br> fabellas inimicus vel. Magna fugit vivendum et est, minim euismod splendide in ius. Cu brute <br> nostro doctus sea.
+
+          Ius in dicat choro, ad aliquid civibus molestiae pri. Id vix dolor integre <br> aliquando, id ius utroque repudiandae. Natum nulla vis te, te iudico dicunt oblique nec, te usu <br> vide facer recteque. Debitis facilisis percipitur est no. Eum an eius molestiae scribentur. No <br> consetetur scribentur duo. Sale munere constituto quo ad, mei tempor accusamus no, feugait.
+      </p>
+    </article>		  
+  </section>
+  <section class="endSpace"><p>&nbsp;<br></p></section>   
+  </main>
+    
+        <footer>  
+            <section class="contact">
+                <p><b>Weather Today</b></p>
+                <p>123 Main St, Franklin, MU, 83454<br>
+                (999) 999 999 contact@theurl.com<br>
+                
+            <p>&copy; 2018 &nbsp; | &nbsp; Weather Today &nbsp; | &nbsp; <span id="date"></span> &nbsp; | &nbsp; <a href="">Home</a></p>
+            </section>
+        </footer>
+
+        <script src="scripts/currentdate.js"></script>
+
+</body>
+</html>
