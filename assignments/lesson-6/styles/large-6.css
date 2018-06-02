@@ -162,3 +162,18 @@ html{
         visibility: hidden;
         font-size: 0;
     }
+    table.center{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    table, td, th { border: 1px solid gray}
+     table, td, th{
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        
+    }    
+    
+    h6{
+        display: none;
+    }
