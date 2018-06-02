@@ -30,7 +30,7 @@ nav ul {
     display: flex;
     list-style-type: none;
     position: relative;
-    color: 3167AD;
+    color: #3167AD;
     
 }
 nav ul li {
@@ -172,8 +172,8 @@ html{
         margin-right: auto;
         text-align: center;
         
-    }    
-    
-    h6{
+    }
+     h6{
         display: none;
     }
+}
