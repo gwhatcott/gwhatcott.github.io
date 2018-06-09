@@ -100,7 +100,8 @@ footer {
     height: 140px;
     bottom: 0;
     background-color: #3167AD;
-    width: auto;
+    width: 100%;
+    left: 0px;
  
 }
 
@@ -213,9 +214,7 @@ html{
         grid-gap: 20px;
         grid-template-columns: 1fr 1fr  ;
         }
-    footer{
-        left:0px;
-    }
+    
 
 }
 
