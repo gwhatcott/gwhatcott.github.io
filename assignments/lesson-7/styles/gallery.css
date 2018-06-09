@@ -1,0 +1,98 @@
+@media only screen and (min-width: 64rem )
+{
+
+.weather-images {
+    text-align: center;
+    padding: 2%;
+    margin: auto;
+    width: 100%;
+    z-index: -2;
+    padding-bottom: 100px;
+}
+
+.galleryimages{
+    align-content: center;
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    z-index: -1;
+}
+
+.galleryimages img{
+    box-shadow: 3px 3px 5px grey;
+}
+.latin1, latin2, latin3, latin4, latin5{
+    border: #3167AD;
+}
+h6{
+    display: none;
+}
+}
+
+
+@media only screen and (min-width: 37em ) and (max-width: 64em )
+{
+
+.weather-images {
+    text-align: center;
+    padding: 2%;
+    border-color: rgba(0,0,0,0);
+    margin: auto;
+    width: 100%;
+    z-index: -2;
+    padding-bottom: 100px;
+}
+
+.galleryimages{
+    align-content: center;
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    z-index: -1;
+}
+
+.galleryimages img{
+    box-shadow: 3px 3px 5px grey;
+}
+.latin1, latin2, latin3, latin4, latin5{
+    border: #3167AD;
+}
+h6{
+    display: none;
+}
+}
+
+@media only screen and (min-width: 0em ) and (max-width: 37em )
+
+{
+
+.weather-images {
+    text-align: center;
+    padding: 2%;
+    margin: auto;
+    width: 100%;
+    z-index: -2;
+    padding-bottom: 0px;
+}
+
+.galleryimages{
+    align-content: center;
+    display: inline-grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    z-index: -1;
+}
+
+.galleryimages img{
+    box-shadow: 3px 3px 5px grey;
+}
+.latin1, latin2, latin3, latin4, latin5{
+    border: #3167AD;
+}
+h6{
+    display: none;
+}
+}
