@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head> 
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1">
+    <title>Weather Today</title>
+    <meta name="description" content="Weather Site Plan">
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/main-7.css">
+    <link rel="stylesheet" type="text/css" href="styles/medium-7.css">
+    <link rel="stylesheet" type="text/css" href="styles/large-7.css">
+    <link rel="stylesheet" type="text/css" href="styles/stormcenter.css">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+    <script src="scripts/hamburger.js"></script>
+
+    
+</head>
+<body>
+
+  <header>
+      
+  <h2>Storm Center</h2>
+    <span class="icon" onclick="openNav()">&#9776; &nbsp;</span>
+
+ </header>
+    
+    
+    
+    <nav>
+
+    <ul class="topnav" id="myTopnav">
+    	<li><a href="#" style="text-decoration:none">Home</a></li>
+    	<li><a href="#" style="text-decoration:none">Franklin</a></li>
+    	<li><a href="#" style="text-decoration:none">Greenville</a></li>
+    	<li><a href="#" style="text-decoration:none">Springfield</a></li>
+    	<li><a href="stormcenter.html" style="text-decoration:none">Storm Center</a></li>
+    	<li><a href="gallery.html" style="text-decoration:none">Gallery</a></li>
+    </ul>
+        
+      </nav> 
+        <div id="main">
+      <nav id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" id=”content-mobile”>&times;</a>
+                <a href="#" style="text-decoration:none">Home</a> 
+                <a href="#" style="text-decoration:none">Franklin</a> 
+                <a href="#" style="text-decoration:none">Greenville</a> 
+                <a href="#" style="text-decoration:none">Springfield</a>
+                <a href="stormcenter.html" style="text-decoration:none">Storm Center</a> 
+                <a href="gallery.html" style="text-decoration:none">Gallery</a>
+            </nav>
+        </div>
+        
+    
+    
+  <main>
+      <form>
+      <section class="information">
+         
+         <div>
+            <input id="name" type="text" name="name" pattern="[A-za-z]{5}" placeholder="John Smith">
+             <label for="name">Your Name:</label>
+         </div>
+         <div>
+            <input id="email" type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" placeholder="example@example.com">
+             <label for="email">Your Email:</label>
+         </div>
+         <div>
+            <input id="phone" type="tel" name="phone" pattern="[0-9]" placeholder="123-456-7890">
+             <label for="email">Phone Number:</label>
+         </div>
+         <div>
+            <input id="zip" type="text" name="zip" pattern="[0-9]" placeholder="12345">
+             <label for="zip">Zip Code:</label>
+         </div>
+         <div>
+            <input id="date" type="date" name="date">
+             <label for="date">Date of Storm:</label>
+         </div>
+         <div>
+             <input list="stormtype">
+                <datalist id="stormtype">
+                    <option value="Flash Flood">
+                    <option value="Hail">
+                    <option value="Hurricane">
+                    <option value="Thunderstorm">
+                    <option value="Tornado">
+                </datalist>
+                    <label for="stormtype">Type of Storm:</label>    
+         </div>
+         <div>
+             <input type="number" name="quantity" min="1" max="10">
+                    <label for="stormtype">Storm Severity:</label>    
+         </div>
+         <div>
+                <select id="stormrate">
+                        <option disabled selected value>Select an Option</option>
+                        <option value="Franklin">Franklin</option>
+                        <option value="Springfield">Springfield</option>
+                        <option value="Greenville">Greenville</option>
+                </select>
+                    <label for="stormtype">Storm Location:</label>    
+         </div>
+         <div>
+             <h1>User In-Danger Level</h1>
+                <input type="radio" name="danger" value="yes" checked> Yes<br>
+                <input type="radio" name="danger" value="maybe"> Maybe<br>
+                <input type="radio" name="danger" value="no"> No
+         </div>
+         <div>
+             <h1>Any Additional Information or Comments?</h1>
+             <textarea rows="5" cols="35"></textarea>
+         </div>
+         <div>
+             <input type="submit" value="Submit">
+         </div>
+         
+        </section>
+        
+             
+          </form>           
+  </main>
+    
+        <footer>  
+            <section class="contact">
+                <h6>warning-placeholder</h6> 
+                <p><b>Weather Today</b></p>
+                <p>123 Main St, Franklin, MU, 83454<br>
+                (999) 999 999 contact@theurl.com<br>
+                
+            <p>&copy; 2018 &nbsp; | &nbsp; Weather Today &nbsp; | &nbsp; <span id="date"></span> &nbsp; | &nbsp; <a href="">Home</a></p>
+            </section>
+        </footer>
+
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/windchill.js"></script>
+
+</body>
+</html>
