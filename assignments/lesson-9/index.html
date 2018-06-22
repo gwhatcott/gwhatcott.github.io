@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head> 
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1">
+    <title>Weather Today</title>
+    <meta name="description" content="Weather Site Plan">
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="styles/main-7.css">
+    <link rel="stylesheet" type="text/css" href="styles/medium-7.css">
+    <link rel="stylesheet" type="text/css" href="styles/large-7.css">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+    <script src="scripts/hamburger.js"></script>
+
+    
+</head>
+<body>
+
+  <header>
+      
+  <h2>Franklin</h2>
+    <span class="icon" onclick="openNav()">&#9776; &nbsp;</span>
+
+ </header>
+    
+    
+    
+    <nav>
+
+    <ul class="topnav" id="myTopnav">
+    	<li><a href="#" style="text-decoration:none">Home</a></li>
+    	<li><a href="franklin-7.html" style="text-decoration:none">Franklin</a></li>
+    	<li><a href="#" style="text-decoration:none">Greenville</a></li>
+    	<li><a href="#" style="text-decoration:none">Springfield</a></li>
+    	<li><a href="stormcenter.html" style="text-decoration:none">Storm Center</a></li>
+    	<li><a href="gallery.html" style="text-decoration:none">Gallery</a></li>
+    </ul>
+        
+      </nav> 
+        <div id="main">
+      <nav id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" id=”content-mobile”>&times;</a>
+                <a href="#" style="text-decoration:none">Home</a> 
+                <a href="franklin-7.html" style="text-decoration:none">Franklin</a> 
+                <a href="#" style="text-decoration:none">Greenville</a> 
+                <a href="#" style="text-decoration:none">Springfield</a>
+                <a href="stormcenter.html" style="text-decoration:none">Storm Center</a> 
+                <a href="gallery.html" style="text-decoration:none">Gallery</a>
+            </nav>
+        </div>
+        
+    
+    
+  <main>
+            
+       <script>
+        var header = document.querySelector('header');
+        var section = document.querySelector('section');
+        var requestURL = 'https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json';
+        var request = new XMLHttpRequest();
+            request.open('GET', requestURL);
+            request.responseType = 'json';
+            request.send();
+            request.onload = function() {
+        var superHeroes = request.response;
+            populateHeader(superHeroes);
+            showHeroes(superHeroes);
+        }
+        function populateHeader(jsonObj) {
+        var myH1 = document.createElement('h1');
+            myH1.textContent = jsonObj['squadName'];
+            header.appendChild(myH1);
+        var myPara = document.createElement('p');
+            myPara.textContent = 'Hometown: ' + jsonObj['homeTown'] + ' // Formed: ' + jsonObj['formed'];
+            header.appendChild(myPara);
+        }
+        function showHeroes(jsonObj) {
+  var heroes = jsonObj['members'];
+      
+  for (var i = 0; i < heroes.length; i++) {
+    var myArticle = document.createElement('article');
+    var myH2 = document.createElement('h2');
+    var myPara1 = document.createElement('p');
+    var myPara2 = document.createElement('p');
+    var myPara3 = document.createElement('p');
+    var myList = document.createElement('ul');
+
+    myH2.textContent = heroes[i].name;
+    myPara1.textContent = 'Secret identity: ' + heroes[i].secretIdentity;
+    myPara2.textContent = 'Age: ' + heroes[i].age;
+    myPara3.textContent = 'Superpowers:';
+        
+    var superPowers = heroes[i].powers;
+    for (var j = 0; j < superPowers.length; j++) {
+      var listItem = document.createElement('li');
+      listItem.textContent = superPowers[j];
+      myList.appendChild(listItem);
+    }
+
+    myArticle.appendChild(myH2);
+    myArticle.appendChild(myPara1);
+    myArticle.appendChild(myPara2);
+    myArticle.appendChild(myPara3);
+    myArticle.appendChild(myList);
+
+    section.appendChild(myArticle);
+  }
+}
+    </script>
+    
+     
+  <section class="endSpace"><p>&nbsp;<br></p><h6>warning-placeholder</h6></section>
+      
+         </main>
+    
+        <footer>  
+            <section class="contact">
+                <h6>warning-placeholder</h6> 
+                <p><b>Weather Today</b></p>
+                <p>123 Main St, Franklin, MU, 83454<br>
+                (999) 999 999 contact@theurl.com<br>
+                
+            <p>&copy; 2018 &nbsp; | &nbsp; Weather Today &nbsp; | &nbsp; <span id="date"></span> &nbsp; | &nbsp; <a href="">Home</a></p>
+            </section>
+        </footer>
+
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/windchill.js"></script>
+
+</body>
+</html>
