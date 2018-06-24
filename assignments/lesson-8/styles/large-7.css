@@ -40,7 +40,7 @@ nav ul li {
     font-size: 15px;
     color: #3167ad;
     width: 100%;
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif; /* Declare the base font-family */
     
 }
 nav ul li a {}
@@ -107,6 +107,7 @@ footer {
 .weather-summary{
     text-align: center;
     position: static;
+    
 }
 
 .country-image{
@@ -142,7 +143,8 @@ footer {
         font-size: 0;
 }
 html{
-        font-family: 'Work Sans', sans-serif;
+        font-family: 'Work Sans', sans-serif; /* Declare the base font-family */
+    
     }
 .icon {
         text-align: left;
@@ -179,7 +181,6 @@ html{
      h6{
         display: none;
     }
-    
-   
+     
     
 }
