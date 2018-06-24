@@ -30,7 +30,7 @@ nav ul {
     display: flex;
     list-style-type: none;
     position: relative;
-    color: #3167AD;
+    color: #3167ad;
     padding-left: 0px;
     
 }
@@ -38,7 +38,7 @@ nav ul li {
     display: block;
     /*padding: 10px 10px 10px 10px;*/   
     font-size: 15px;
-    color: #3167AD;
+    color: #3167ad;
     width: 100%;
     font-family: 'Work Sans', sans-serif;
     
@@ -49,7 +49,7 @@ nav ul li a:hover {}
 
 main figure picture img{
     display: flex;
-    position: center;
+    position: relative;
     padding-left: 100px;
        
     }
@@ -74,7 +74,7 @@ nav figure img {
 
 h3{
     font-size: 30px;
-    padding-right: 50;
+    padding-right: 50 5px;
 }
 
 div picture img{
@@ -179,4 +179,7 @@ html{
      h6{
         display: none;
     }
+    
+   
+    
 }

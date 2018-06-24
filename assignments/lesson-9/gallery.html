@@ -6,11 +6,11 @@
     <title>Weather Today</title>
     <meta name="description" content="Weather Site Plan">
     <link rel="stylesheet" href="CSS/normalize.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="styles/main-7.css">
     <link rel="stylesheet" type="text/css" href="styles/medium-7.css">
     <link rel="stylesheet" type="text/css" href="styles/large-7.css">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/gallery.css">
     <script src="scripts/hamburger.js"></script>
 
     
@@ -19,7 +19,7 @@
 
   <header>
       
-  <h2>Franklin</h2>
+  <h2>Gallery</h2>
     <span class="icon" onclick="openNav()">&#9776; &nbsp;</span>
 
  </header>
@@ -37,7 +37,7 @@
     	<li><a href="gallery.html" style="text-decoration:none">Gallery</a></li>
     </ul>
         
-      </nav> 
+    </nav> 
         <div id="main">
       <nav id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" id=”content-mobile”>&times;</a>
@@ -47,19 +47,43 @@
                 <a href="#" style="text-decoration:none">Springfield</a>
                 <a href="stormcenter.html" style="text-decoration:none">Storm Center</a> 
                 <a href="gallery.html" style="text-decoration:none">Gallery</a>
-            </nav>
+      </nav>
         </div>
         
     
     
   <main>
-
-       
-    
-     
-  <section class="endSpace"><p>&nbsp;<br></p><h6>warning-placeholder</h6></section>
-      
-         </main>
+      <section class="weather-images">
+          <h6>placeholder</h6>
+                <div class="galleryimages">
+                    <figure>
+                        <img id="fallday" src="images/fallday.jpg" alt="Fall Day">
+                        <figcaption id="latin1">ullamco laboris nisi ut aliquip</figcaption>
+                    </figure>
+                    <figure>
+                        <img id="rainyday" src="images/rainyday.jpg" alt="Rainy Day">
+                        <figcaption id="latin2">ullamco laboris nisi ut aliquip</figcaption>
+                    </figure>
+                    <figure>
+                        <img id="snowyday" src="images/snowyday.jpg" alt="Snowy Day">
+                        <figcaption id="latin3">ullamco laboris nisi ut aliquip</figcaption>
+                    </figure>
+                    <figure>
+                        <img id="sunnyday" src="images/sunnyday.jpg" alt="Sunny Day">
+                        <figcaption id="latin4">ullamco laboris nisi ut aliquip</figcaption>
+                    </figure>
+                    <figure>
+                        <img id="tornadoday" src="images/tornadoday.jpg" alt="Tornado">
+                        <figcaption id="latin5">ullamco laboris nisi ut aliquip</figcaption>
+                    </figure>
+                    <figure>    
+                        <img id="windyday" src="images/windyday.jpg" alt="Windy Day">
+                        <figcaption id="latin6">ullamco laboris nisi ut aliquip</figcaption>
+                    </figure>
+                </div>
+            </section>   
+  <section class="spacing"><p>&nbsp;<br>&nbsp;</p><h6>placeholder</h6></section>   
+  </main>    
     
         <footer>  
             <section class="contact">
@@ -71,7 +95,7 @@
             <p>&copy; 2018 &nbsp; | &nbsp; Weather Today &nbsp; | &nbsp; <span id="date"></span> &nbsp; | &nbsp; <a href="">Home</a></p>
             </section>
         </footer>
-        <script src="scripts/jsonweather.js"></script>
+
         <script src="scripts/currentdate.js"></script>
         <script src="scripts/windchill.js"></script>
 
