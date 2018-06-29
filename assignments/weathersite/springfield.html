@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head> 
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1">
+    <title>Weather Today</title>
+    <meta name="description" content="Weather Site Plan">
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/medium.css">
+    <link rel="stylesheet" type="text/css" href="styles/large.css">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+    <script src="scripts/hamburger.js"></script>
+
+    
+</head>
+<body>
+
+  <header includefile="header.html">
+
+ </header>
+    
+    
+    
+    <nav>
+
+    <ul class="topnav" id="mainmenu">
+    	<li><a href="index.html" style="text-decoration:none">Home</a></li>
+    	<li><a href="franklin.html" style="text-decoration:none">Franklin</a></li>
+    	<li><a href="greenville.html" style="text-decoration:none">Greenville</a></li>
+    	<li><a href="springfield.html" style="text-decoration:none">Springfield</a></li>
+    	<li><a href="stormcenter.html" style="text-decoration:none">Storm Center</a></li>
+    	<li><a href="gallery.html" style="text-decoration:none">Gallery</a></li>
+    </ul>
+        
+      </nav> 
+        <div id="main">
+      <nav id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" id=”content-mobile”>&times;</a>
+                <a href="index.html" style="text-decoration:none">Home</a> 
+                <a href="franklin.html" style="text-decoration:none">Franklin</a> 
+                <a href="greenville.html" style="text-decoration:none">Greenville</a> 
+                <a href="springfield.html" style="text-decoration:none">Springfield</a>
+                <a href="stormcenter.html" style="text-decoration:none">Storm Center</a> 
+                <a href="gallery.html" style="text-decoration:none">Gallery</a>
+            </nav>
+        </div>
+        
+    
+    
+  <main>
+    
+        <figure>
+            <picture>
+            <img src="images/franklin-original.01.jpg" alt="Franklin">
+            </picture>
+        </figure>
+   
+    <section class="weather-summary">
+      <h3>Current Springfield Weather</h3>    
+    <section class="weather-summary">
+          <img src="https://openweathermap.org/img/w/02d.png" id = "icon" alt="Weather Icon">
+
+          <p>Current Tempurature: <span id = "temp">80.42&deg;F</span></p>
+      <div class="highlow">
+        <p>High:<span id = "high">82.4&deg;F</span></p>  
+        <p>Low: <span id = "low">77&deg;F</span></p>  
+      </div>   
+          
+      <div class="conditions">
+        <p>Precipitation:0%</p>  
+        <p>Wind Speed: <span id = "wind">6.93</span></p>  
+      </div>    
+    </section>
+                   
+    </section>
+      
+    
+    <section class="forecast" id=”content-desktop”>
+        <h6>warning-placeholder</h6>    
+
+    <table>
+        <thead>
+            <tr>
+            <th colspan="10">Ten Day Forecast</th>
+            </tr>
+	   </thead>
+        <tbody>
+            
+          <tr>
+            <th>Day 1</th>
+            <th>Day 2</th>
+            <th>Day 3</th>
+            <th>Day 4</th>
+            <th>Day 5</th>
+            <th>Day 6</th>
+            <th>Day 7</th>
+            <th>Day 8</th>
+            <th>Day 9</th>
+            <th>Day 10</th>
+          </tr>
+                      
+          <tr>
+            <td>89&deg;F</td>
+            <td>87&deg;F</td>
+            <td>78&deg;F</td>
+            <td>75&deg;F</td>
+            <td>72&deg;F</td>
+            <td>72&deg;F</td>
+            <td>79&deg;F</td>
+            <td>83&deg;F</td>
+            <td>85&deg;F</td>
+            <td>89&deg;F</td>
+          </tr>
+            
+	</tbody>
+      </table>
+    </section>
+      <section class="country-image">
+          <h6>warning-placeholder</h6> 
+
+    <article>
+      <h3>Springfield Breaks Record</h3>	
+      <img src="images/springfield.jpg" alt="Countryside">
+      <p class="town-article">
+          Lorem ipsum dolor sit amet, an vis postea diceret delicatissimi. Eos ea eros comprehensam. <br> Vim et aliquando theophrastus consectetuer, sea in populo audire. Reque nostrud nostrum id <br> vim. Ne deleniti iudicabit ius, vis ubique assentior ut. Dico aliquid interpretaris at vis, sale <br> facilis complectitur nec te.
+
+          Legere tincidunt in cum, ad possim repudiandae eum. Eu usu <br> referrentur consequuntur, ut doctus torquatos eam. An vis convenire molestiae dissentias, <br> dolores ponderum efficiantur has eu. Vel partem inimicus te, quo at stet aperiam, te ipsum <br> idque quo.
+
+          Sed ex mundi labore. Sint erroribus mea ex. Ad aperiri adolescens nam. Cu eripuit <br> fabellas inimicus vel. Magna fugit vivendum et est, minim euismod splendide in ius. Cu brute <br> nostro doctus sea.
+
+          Ius in dicat choro, ad aliquid civibus molestiae pri. Id vix dolor integre <br> aliquando, id ius utroque repudiandae. Natum nulla vis te, te iudico dicunt oblique nec, te usu <br> vide facer recteque. Debitis facilisis percipitur est no. Eum an eius molestiae scribentur. No <br> consetetur scribentur duo. Sale munere constituto quo ad, mei tempor accusamus no, feugait.
+      </p>
+    </article>		  
+  </section>
+  <section class="endSpace"><p>&nbsp;<br></p><h6>warning-placeholder</h6></section>
+      
+         </main>
+    
+        <footer includefile="footer.html">  
+            
+        </footer>
+    
+        <script src="scripts/weatherspringfield.js"></script>
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/windchill.js"></script>
+        <script src="scripts/include.js"></script>
+
+</body>
+<script>
+
+var urlString = document.location.href;
+var urlArray = urlString.split('/');
+var pageHREF=urlArray[urlArray.length-1];
+
+if (pageHREF !=="") {
+    var menu = document.querySelectorAll('ul#mainmenu li a');
+    var i;
+    
+    for(i=0; i<menu.length; i++) {
+        var currentURL=(menu[i].getAttribute("href"));
+        menu[i].parentNode.className="";
+        if (currentURL===pageHREF) {
+            menu[i].parentNode.className="active";
+        }
+    }
+}
+    
+</script>
+</html>

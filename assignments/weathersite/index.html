@@ -17,63 +17,60 @@
 </head>
 <body>
 
-  <header>
+  <header includefile="header.html">
       
-  <h2>Franklin</h2>
-    <span class="icon" onclick="openNav()">&#9776; &nbsp;</span>
-
- </header>
-    
-    
-    
+  </header>
     <nav>
 
-    <ul class="topnav" id="myTopnav">
+    <ul class="topnav" id="mainmenu">
     	<li><a href="index.html" style="text-decoration:none">Home</a></li>
     	<li><a href="franklin.html" style="text-decoration:none">Franklin</a></li>
-    	<li><a href="#" style="text-decoration:none">Greenville</a></li>
-    	<li><a href="#" style="text-decoration:none">Springfield</a></li>
+    	<li><a href="greenville.html" style="text-decoration:none">Greenville</a></li>
+    	<li><a href="springfield.html" style="text-decoration:none">Springfield</a></li>
     	<li><a href="stormcenter.html" style="text-decoration:none">Storm Center</a></li>
     	<li><a href="gallery.html" style="text-decoration:none">Gallery</a></li>
-    </ul>
-        
+    </ul>        
       </nav> 
         <div id="main">
       <nav id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" id=”content-mobile”>&times;</a>
                 <a href="index.html" style="text-decoration:none">Home</a> 
                 <a href="franklin.html" style="text-decoration:none">Franklin</a> 
-                <a href="#" style="text-decoration:none">Greenville</a> 
-                <a href="#" style="text-decoration:none">Springfield</a>
+                <a href="greenville.html" style="text-decoration:none">Greenville</a> 
+                <a href="springfield.html" style="text-decoration:none">Springfield</a>
                 <a href="stormcenter.html" style="text-decoration:none">Storm Center</a> 
                 <a href="gallery.html" style="text-decoration:none">Gallery</a>
             </nav>
-        </div>
-        
-    
-    
-  <main>
-
-       
-    
-     
+        </div>    
+  <main>     
   <section class="endSpace"><p>&nbsp;<br></p><h6>warning-placeholder</h6></section>
       
-         </main>
-    
-        <footer>  
-            <section class="contact">
-                <h6>warning-placeholder</h6> 
-                <p><b>Weather Today</b></p>
-                <p>123 Main St, Franklin, MU, 83454<br>
-                (999) 999 999 contact@theurl.com<br>
-                
-            <p>&copy; 2018 &nbsp; | &nbsp; Weather Today &nbsp; | &nbsp; <span id="date"></span> &nbsp; | &nbsp; <a href="">Home</a></p>
-            </section>
+  </main>    
+        <footer includefile="footer.html">          
         </footer>
         <script src="scripts/jsonweather.js"></script>
         <script src="scripts/currentdate.js"></script>
         <script src="scripts/windchill.js"></script>
-
+        <script src="scripts/include.js"></script>    
 </body>
+<script>
+
+var urlString = document.location.href;
+var urlArray = urlString.split('/');
+var pageHREF=urlArray[urlArray.length-1];
+
+if (pageHREF !=="") {
+    var menu = document.querySelectorAll('ul#mainmenu li a');
+    var i;
+    
+    for(i=0; i<menu.length; i++) {
+        var currentURL=(menu[i].getAttribute("href"));
+        menu[i].parentNode.className="";
+        if (currentURL===pageHREF) {
+            menu[i].parentNode.className="active";
+        }
+    }
+}
+    
+</script>
 </html>
