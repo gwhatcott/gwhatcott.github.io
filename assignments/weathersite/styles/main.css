@@ -44,7 +44,7 @@ nav ul {
     display: flex;
     list-style-type: none;
     position: relative;
-    color: 3167AD;
+    color: #3167AD;
     
 }
 nav ul li {
@@ -57,7 +57,7 @@ nav ul li {
 }
 nav ul li a {}
 nav ul li.active a {
-    background-color: blue;
+    background-color: #3167AD;
     color: white;
     }
 nav ul li a:hover {}
@@ -109,7 +109,7 @@ footer {
     position: fixed;
     height: 100px;
     bottom: 0;
-    background-color: blue;
+    background-color: #3167AD;
     width: 100%;
     font-size: 8px;
  
@@ -176,7 +176,7 @@ html{
 }
 .icon {
     text-align: left;
-    color: blue;
+    color: #3167AD;
     font-size:38px;
     cursor:pointer;
     margin-top: 28px;
@@ -203,7 +203,7 @@ html{
     z-index: 1; 
     top: 0; 
     left: 0;
-    background-color: blue; 
+    background-color: #3167AD; 
     overflow-x: hidden; 
     padding-top: 60px; 
     transition: 0.5s; 
