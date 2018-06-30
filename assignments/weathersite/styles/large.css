@@ -8,11 +8,7 @@ header, nav{
 
 header {}
 header h1 {}
-header img {
-    
-        
-
-}
+    header img {}
     header{
        background-image:url("../images/sun.sole.png");
         background-repeat: no-repeat;
@@ -52,7 +48,7 @@ nav ul li a:hover {}
 
 main figure picture img{
     display: flex;
-    position: center;
+    position:relative;
     padding-left: 100px;
        
     }
@@ -104,8 +100,11 @@ footer {
     background-color: #3167AD;
     width: 100%;
     left: 0;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    }
  
-}
 
 .weather-summary{
     text-align: center;
@@ -128,10 +127,7 @@ footer {
     padding-bottom: 100px;
     }
 
-.contact{
-    text-align: center;
-    padding: 20px;
-    }
+
 
  #content-mobile {
         display: block;
@@ -186,5 +182,4 @@ html{
         padding-bottom: 100px;
     }
 
-}
 }

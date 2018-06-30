@@ -1,29 +1,15 @@
 <!DOCTYPE html>
 <html lang="en-us">
-<head> 
-  <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, intial-scale=1">
-    <title>Weather Today</title>
-    <meta name="description" content="Weather Site Plan">
-    <link rel="stylesheet" href="CSS/normalize.css">
-    <link rel="stylesheet" type="text/css" href="styles/main.css">
-    <link rel="stylesheet" type="text/css" href="styles/medium.css">
-    <link rel="stylesheet" type="text/css" href="styles/large.css">
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="styles/gallery.css">
-    <script src="scripts/hamburger.js"></script>
-
-    
+<head includefile="head.html"> 
+  <script src="scripts/currentdate.js"></script>
 </head>
+   
 <body>
-
+<script src="scripts/currentdate.js"></script>
   <header includefile="header.html">
 
  </header>
-    
-    
-    
-    <nav>
+  <nav>
 
     <ul class="topnav" id="mainmenu">
     	<li><a href="index.html" style="text-decoration:none">Home</a></li>
@@ -34,7 +20,7 @@
     	<li><a href="gallery.html" style="text-decoration:none">Gallery</a></li>
     </ul>
         
-    </nav> 
+      </nav> 
         <div id="main">
       <nav id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" id=”content-mobile”>&times;</a>
@@ -44,11 +30,8 @@
                 <a href="springfield.html" style="text-decoration:none">Springfield</a>
                 <a href="stormcenter.html" style="text-decoration:none">Storm Center</a> 
                 <a href="gallery.html" style="text-decoration:none">Gallery</a>
-      </nav>
+            </nav>
         </div>
-        
-    
-    
   <main>
       <section class="weather-images">
           <h6>placeholder</h6>
@@ -85,14 +68,13 @@
         <footer includefile="footer.html">  
             
         </footer>
-
+        <script src="scripts/hamburger.js"></script>
         <script src="scripts/currentdate.js"></script>
         <script src="scripts/windchill.js"></script>
         <script src="scripts/include.js"></script>
 
 </body>
-<script>
-
+  <script>
 var urlString = document.location.href;
 var urlArray = urlString.split('/');
 var pageHREF=urlArray[urlArray.length-1];
@@ -109,6 +91,6 @@ if (pageHREF !=="") {
         }
     }
 }
-    
 </script>
+
 </html>

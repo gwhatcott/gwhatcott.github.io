@@ -112,6 +112,9 @@ footer {
     background-color: #3167AD;
     width: 100%;
     font-size: 8px;
+    text-align: center;
+    padding: 20px;
+    color: white;
  
 }
 
@@ -135,10 +138,7 @@ footer {
     padding-bottom: 100px;
 }
 
-.contact{
-    text-align: center;
-    padding: 20px;
-}
+
 
  #content-mobile {
     display: block;

@@ -105,8 +105,10 @@ footer {
     background-color: #3167AD;
     width: 100%;
     left: 0px;
- 
-}
+    text-align: center;
+    padding: 20px;
+    color: white;
+    }
 
 .weather-summary{
     text-align: center;
