@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head includefile="head.html"> 
+</head>
+   
+<body>
+<script src="scripts/currentdate.js"></script>
+  <header includefile="header.html">
+  
+      
+  </header>
+     
+     <nav>
+
+    <ul class="topnav" id="mainmenu">
+    	<li><a href="index.html" style="text-decoration:none">Home</a></li>
+    	<li><a href="franklin.html" style="text-decoration:none">Franklin</a></li>
+    	<li><a href="greenville.html" style="text-decoration:none">Greenville</a></li>
+    	<li><a href="springfield.html" style="text-decoration:none">Springfield</a></li>
+    	<li><a href="stormcenter.html" style="text-decoration:none">Storm Center</a></li>
+    	<li><a href="gallery.html" style="text-decoration:none">Gallery</a></li>
+    </ul>
+        
+      </nav> 
+        <div id="main">
+      <nav id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" id=”content-mobile”>&times;</a>
+                <a href="index.html" style="text-decoration:none">Home</a> 
+                <a href="franklin.html" style="text-decoration:none">Franklin</a> 
+                <a href="greenville.html" style="text-decoration:none">Greenville</a> 
+                <a href="springfield.html" style="text-decoration:none">Springfield</a>
+                <a href="stormcenter.html" style="text-decoration:none">Storm Center</a> 
+                <a href="gallery.html" style="text-decoration:none">Gallery</a>
+            </nav>
+        </div>
+
+    
+  <main>     
+  <section class="endSpace"><p>&nbsp;<br></p><h6>warning-placeholder</h6></section>
+      
+  </main>    
+        <footer includefile="footer.html">          
+        </footer>
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/jsonweather.js"></script>
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/windchill.js"></script>
+        <script src="scripts/include.js"></script>    
+</body>
+<script>
+var urlString = document.location.href;
+var urlArray = urlString.split('/');
+var pageHREF=urlArray[urlArray.length-1];
+
+if (pageHREF !=="") {
+    var menu = document.querySelectorAll('ul#mainmenu li a');
+    var i;
+    
+    for(i=0; i<menu.length; i++) {
+        var currentURL=(menu[i].getAttribute("href"));
+        menu[i].parentNode.className="";
+        if (currentURL===pageHREF) {
+            menu[i].parentNode.className="active";
+        }
+    }
+}
+</script>
+
+</html>
