@@ -7,40 +7,41 @@
 	<script src="js/jquery-2.2.1.min.js"></script>
 	<script>
 	$(function(){
-        $('.coreValues').prepend("<li><strong>This is brand new !!</strong></li>");
-        $("<li><strong>This is also great !!</strong></li>").prependTo(".coreValues");
+           var toggleStyle = function() {
+            var inputFields = $('input[type="text"]');
+            
+            if( inputFields.css('background-color') === 'rgb(255, 0, 0)' ){
+                //background color white
+                inputFields.css('background-color', 'rgb(255, 255, 255)');
+            } else {
+                //set background to red
+                inputFields.css('background-color', 'rgb(255, 0, 0)');
+              }
+            }
+        $('.coreValues').prepend("<li><strong>This is brand new!!</strong></li>");
+        $('.coreValues').prepend("<li><strong>This is also great!!</strong></li>");
         
-    })
+        $('#ReqAQuoteBtn').click( toggleStyle );
         
-    $(function(){
+        $('#alcoveLogo').css('opacity', 0.4);
+        
+        $('.servicesBtn').css('color', '#FFF');
+        
+        $('button').css('border', '1px solid red');
+        
+        $('h2').css('border', '1px solid red');
+        
         var nameVal = $('input[name="nameVal"]');
         
         function FillEmpty(){
-            if ( nameVal.val() == ''){
-                 nameVal.val( 'John Doe' );
+            if(nameVal.val() == '' ){
+               nameVal.val( 'John Doe' );
             }
         }
-
+        
         $('#ReqAQuoteBtn').click( FillEmpty );
+          
 	})
-        $(function(){
-        
-		var toggleStyle = function() {
-            
-            var inputFields = $('input[type="text"]');
-            
-            if( inputFields.css('background-color') === 'rgb(255, 0, 0)' ) {
-                //set background color to white
-                inputFields.css('background-color', 'rgb(255, 255, 255)');
-            } else {
-                //set background color to red
-                inputFields.css('background-color', 'rgb(255, 0, 0)');
-            }
-        }
-    
-        
-        $('#ReqAQuoteBtn').click( toggleStyle );
-    })
 	</script>
 </head>
 <body>
@@ -135,6 +136,17 @@
 
 		<div class="footer">
 			<h5>© Alcove Digital Systems | <a href="#">Terms of Use</a></h5>
+            
+                <div>
+                    <ul class="navigation">
+					<li><a href="../Lesson4/animatedMenuBegin.htm" style="text-decoration:none">Animated Menu</a></li>
+					<li><a href="../Lesson4/DropDownMenuBegin.htm" style="text-decoration:none">Drop Down Menu</a></li>
+					<li><a href="../Lesson4/fruitBasketBegin.htm" style="text-decoration:none">Fruit Basket</a></li>
+					<li><a href="../Lesson4/InsertHTMLBegin.htm" style="text-decoration:none">Insert HTML</a></li>
+					<li><a href="../Lesson4/toggleButtonBegin.htm" style="text-decoration:none">Toggle Button</a></li>
+				</ul>
+            
+                </div>
 		</div>
 	</div>
 </body>

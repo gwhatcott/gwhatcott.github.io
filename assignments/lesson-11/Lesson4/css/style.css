@@ -278,4 +278,12 @@ body {
 	color:inherit;
 }
 
+.navigation {
+	position:relative;
+	width:710px;
+	height:100px;
+	float:right;
+	font-size: 8px;
+}
+
 
