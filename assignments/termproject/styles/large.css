@@ -219,5 +219,8 @@ input[type=submit]:hover {
     .information{
         font-size: 30px;
     }
+    .services{
+        text-align: center;
+    }
 
 }
