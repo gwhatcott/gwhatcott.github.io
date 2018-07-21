@@ -1,0 +1,22 @@
+{
+  "services" : [
+  {
+    "name": "Tube Repair",
+    "price": 21.99,
+  },
+  {
+    "name": "Brake Repair",
+    "price": 25.99,
+  },
+
+  {
+    "name": "Paint Job",
+    "price": 339.99,
+  },
+
+  {
+    "name": "New Chain",
+    "price": 17.99,
+  }
+ ]
+}

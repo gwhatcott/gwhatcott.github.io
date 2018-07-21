@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title id="pagename">The Mountain Spoke</title>
+    <meta name="description" content="Mountain Spoke">
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/medium.css">
+    <link rel="stylesheet" type="text/css" href="styles/large.css">
+    <link rel="stylesheet" type="text/css" href="styles/gallery.css">
+    <link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
+</head>
+   
+<body>
+
+  <header>
+      <h2>The Mountain Spoke</h2>
+        <span class="icon" onclick="openNav()">&#9776; &nbsp;</span>
+  </header>
+     
+     <nav>
+
+    <ul class="topnav" id="mainmenu">
+    	<li><a href="index.html" style="text-decoration:none">Home</a></li>
+    	<li><a href="#" style="text-decoration:none">Events</a></li>
+    	<li><a href="mountainbikes.html" style="text-decoration:none">Mountain Bikes</a></li>
+    	<li><a href="services.html" style="text-decoration:none">Services</a></li>
+    	<li><a href="tours.html" style="text-decoration:none">Tours</a></li>
+    	<li><a href="contactus.html" style="text-decoration:none">Contact Us</a></li>
+    </ul>
+        
+      </nav> 
+        <div id="main">
+      <nav id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" id=”content-mobile”>&times;</a>
+                <a href="index.html" style="text-decoration:none">Home</a> 
+                <a href="#" style="text-decoration:none">Events</a> 
+                <a href="mountainbikes.html" style="text-decoration:none">Mountain Bikes</a> 
+                <a href="services.html" style="text-decoration:none">Services</a>
+                <a href="tours.html" style="text-decoration:none">Tours</a> 
+                <a href="contactus.html" style="text-decoration:none">Contact Us</a>
+            </nav>
+        </div>
+
+    
+  
+<main>
+    <h3>Contact Us!</h3>
+
+<div class="container">
+  <form>
+    <input type="text" id="fname" name="firstname" placeholder="First Name">
+    <input type="text" id="lname" name="lastname" placeholder="Last Name">
+    <input type="text" id="email"  name="email" placeholder="Email Address">
+    <textarea id="subject" name="subject" placeholder="What Can We Help You With" style="height:200px"></textarea>
+    <input type="submit" value="Submit" onClick="myFunction()">
+  </form>
+</div>
+
+   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2787.9314410354787!2d-111.09290618460567!3d45.672276627556265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5345459ab72cb6df%3A0xbb98968f9648ea88!2s3950+Valley+Commons+Dr%2C+Bozeman%2C+MT+59718!5e0!3m2!1sen!2sus!4v1531965686595" width="400" height="300" frameborder="0" style="border:0" class="map" allowfullscreen></iframe>
+
+  <section class="endSpace"><p>&nbsp;<br></p><h6>warning-placeholder</h6></section>
+      
+  </main>    
+<footer>
+    <h6>warning-placeholder</h6> 
+    <p><b>The Mountain Shore | Bozeman, MT | 948-394-3947</b></p>
+    <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+    <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+    <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+</footer>
+<script src="scripts/hamburger.js"></script>
+<script src="scripts/wayfind.js"></script> 
+</body>
+    <script>
+            function myFunction()
+            {
+                window.alert("Please Allow 24 Hours For a Response");
+            }
+    </script>
+</html>

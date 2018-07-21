@@ -1,0 +1,78 @@
+input, textarea, select {
+     width: 100%;
+    padding: 8px 15px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    }
+}
+label {
+    float: left;
+    width: 20%
+}
+
+.endspace{
+    padding: 100px;
+}
+
+.information{
+    padding: 100px;
+}
+h1{
+    font-size: 10pt;
+    text-align: left;
+}
+#labdang1, labdang2, labdang3 {
+    float:left;
+    clear: none;
+    display:block;
+    padding 2px 1px 0 0;
+}
+input[type=radio],
+input.radio{
+    float: left;
+    clear: none;
+    margin: 2px 0 0 2px;
+}
+.someclass{
+    float: left;
+    clear: none;
+}
+fieldset{
+    overflow: hidden;
+}
+
+@media only screen and (min-width: 0em ) and (max-width: 37em )
+{
+
+input, textarea, select {
+    width: 100%;
+    padding: 8px 15px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    }
+label {
+    float: left;
+    width: 20%
+}
+
+.endspace{
+    padding: 50px;
+}
+
+.information{
+    padding: 50px;
+}
+h1{
+    font-size: 10pt;
+    text-align: left;
+}
+.danger1{
+        width: 5%
+    }
+}

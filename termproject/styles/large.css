@@ -1,0 +1,223 @@
+@media only screen and (min-width: 64rem )
+{
+header, nav{
+    margin: auto;
+    max-width: 100%;
+    }
+header{
+       background-image:url("../images/mountainspoke.jpg");
+        background-repeat: no-repeat;
+        background-position: left;
+        padding: 15px 15px 15px 15px;
+        height: auto;
+        width: auto;
+        background-size: contain;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    position: relative;
+    color: #000000;
+    padding-left: 0px;
+    width: 100%;
+    padding: 10px;
+    
+}
+nav ul li {
+    display:flex; 
+    font-size: 50px;
+    width: 100%;
+    font-family: 'Sansita', sans-serif;
+    background-color: #DDA87B;
+    padding:15px;
+    text-align: center;
+    
+}
+nav ul li a {
+    color: #000000;
+    font-size: 35px;
+    }
+nav ul li.active a {
+    background-color: #9DBBC4;
+    color: white;
+    padding: 15px;
+}
+h2 {
+    text-align: center;
+    font-size: 75px;
+    font-family: 'Sansita', sans-serif;
+}
+
+footer {
+    height: 140px;
+    bottom: 0;
+    background-color: #9DBBC4;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    padding: 20px;
+    color: #000000;
+}
+
+ #content-mobile {
+        display: block;
+        visibility: visible;
+        font-size: inherit;
+    }
+
+#content-desktop {
+        display: none;
+        visibility: hidden;
+        font-size: 0;
+}
+html{
+        font-family: 'Sansita', sans-serif; /* Declare the base font-family */
+}
+.icon {
+        text-align: left;
+        font-size:38px;
+        cursor:pointer;
+        margin-top: 35px;
+        margin-left: 25px;
+        position:relative;
+        top:-10px;
+        right:-10px;
+        left:-10px;
+        bottom:-10px;
+        float: left;
+        z-index:40;
+        visibility: hidden;
+
+}
+.sidenav {
+        display: none;
+        visibility: hidden;
+        font-size: 0;
+}
+table.center{
+        margin-left: auto;
+        margin-right: auto;
+}
+table, td, th { border: 1px solid gray}
+table, td, th{
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        
+    }
+h6{
+    display: none;
+}
+    body, html{
+        padding-bottom: 10px;
+    }
+.fa {
+  padding: 20px;
+  font-size: 25px;
+  width: 55px;
+  text-align: center;
+  text-decoration: none;
+
+  border-radius: 100%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+    input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #DDA87B;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #DDA87B;
+}
+
+.container {
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    padding: 30px;
+}
+.map{
+    padding:30px;
+    position:inherit
+}
+       .information{
+        padding-left: 300px;
+    }
+    h3{
+        font-size: 30px;
+        display:block;
+ 
+    }
+
+    article {
+    float: left;
+    padding: 10px;
+    text-align: justify;
+    padding-left: 20px;
+    padding-right: 20px;
+    object-position: right;
+    object-fit: cover;
+}
+    .story {
+    display: block;
+    float: left;
+    text-align: justify;
+    background-color: rgba(215, 255, 255, 0.8);
+    padding: 20px;
+    border-color: rgba(0,0,0,0);
+    padding-left: 200px;
+}
+    aside img{
+        float:left;
+    }
+    .test{
+        display:block;
+        padding-left: 30px;
+    }
+    .w3-content w3-display-container{
+        padding-left: 100px;
+        width: auto;
+    }
+    #bikers{
+        width: auto;
+    }
+    .mySlides{
+        width:auto;
+    }
+    .information{
+        font-size: 30px;
+    }
+
+}
