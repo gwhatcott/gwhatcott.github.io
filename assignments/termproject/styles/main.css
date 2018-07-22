@@ -186,22 +186,7 @@ html{
 h6{
     display: none;
     }
-.galleryimages{
-    align-content: center;
-    display: inline-grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-gap: 20px;
-    padding-bottom: 150px;
-    }
-    
-.galleryimages img{
-    box-shadow: none;
-    width: 90%;
-    height: auto;
-    margin-right: auto;
-    margin-left: auto;
-    }
+
 .fa {
   padding: 20px;
   font-size: 25px;
@@ -266,6 +251,19 @@ input[type=submit]:hover {
     }
      .services{
         text-align: center;
+    }
+    table.center{
+        margin-left: auto;
+        margin-right: auto;
+}
+table, td, th { border: 1px solid gray}
+table, td, th{
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-size: 15px;
+        padding: 2px;
+        
     }
     
 

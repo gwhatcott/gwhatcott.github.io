@@ -2,7 +2,7 @@
 {
 header, nav{
     margin: auto;
-    max-width: 100%;
+    max-width: auto;
     }
 header{
        background-image:url("../images/mountainspoke.jpg");
@@ -36,7 +36,8 @@ nav ul li {
 }
 nav ul li a {
     color: #000000;
-    font-size: 35px;
+    font-size: 25px;
+    text-align: center;
     }
 nav ul li.active a {
     background-color: #9DBBC4;
@@ -104,6 +105,8 @@ table, td, th{
         margin-left: auto;
         margin-right: auto;
         text-align: center;
+        font-size: 30px;
+        padding: 5px;
         
     }
 h6{
@@ -221,6 +224,7 @@ input[type=submit]:hover {
     }
     .services{
         text-align: center;
+        padding:5px;
     }
 
 }
