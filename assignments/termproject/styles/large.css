@@ -209,7 +209,7 @@ input[type=submit]:hover {
         display:block;
         padding-left: 30px;
     }
-    .w3-content w3-display-container{
+    .container{
         padding-left: 100px;
         width: auto;
     }
@@ -217,7 +217,7 @@ input[type=submit]:hover {
         width: auto;
     }
     .mySlides{
-        width:auto;
+        width:100%;
     }
     .information{
         font-size: 30px;
