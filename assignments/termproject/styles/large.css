@@ -22,6 +22,7 @@ nav ul {
     padding-left: 0px;
     width: 100%;
     padding: 10px;
+    font-size: 50px;
     
 }
 nav ul li {
@@ -36,7 +37,7 @@ nav ul li {
 }
 nav ul li a {
     color: #000000;
-    font-size: 25px;
+    font-size: 50px;
     text-align: center;
     }
 nav ul li.active a {
@@ -220,11 +221,27 @@ input[type=submit]:hover {
         width:100%;
     }
     .information{
-        font-size: 30px;
+        font-size: 20px;
     }
     .services{
         text-align: center;
         padding:5px;
     }
-
+    .centennial{
+        text-align: center;
+    }
+    .title{
+        font-size: 30px;
+    }
+    .info{
+        font-size: 25px;
+        padding: 10px;
+    }
+    .trail{
+        float:left;
+        padding: 30px;
+    }
+    .trailride{
+        padding:10px;
+    }
 }
